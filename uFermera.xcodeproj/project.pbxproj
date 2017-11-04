@@ -1,0 +1,470 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		3406C8781EE480BF0058272F /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3406C8771EE480BF0058272F /* AppDelegate.swift */; };
+		3406C87D1EE480BF0058272F /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3406C87B1EE480BF0058272F /* Main.storyboard */; };
+		3406C8801EE480BF0058272F /* uFermera.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = 3406C87E1EE480BF0058272F /* uFermera.xcdatamodeld */; };
+		3406C8821EE480BF0058272F /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3406C8811EE480BF0058272F /* Assets.xcassets */; };
+		3406C8851EE480BF0058272F /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 3406C8831EE480BF0058272F /* LaunchScreen.storyboard */; };
+		3406C88E1EE480E50058272F /* MapKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3406C88D1EE480E50058272F /* MapKit.framework */; };
+		3406C8981EE486730058272F /* uFermeraAPI.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3406C8971EE486730058272F /* uFermeraAPI.swift */; };
+		3409E4671F1E6AE900A4B964 /* ProductDetailsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3409E4661F1E6AE900A4B964 /* ProductDetailsTableViewController.swift */; };
+		3462B5D11EE7330800BD740B /* Product.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3462B5D01EE7330800BD740B /* Product.swift */; };
+		34EE744A1EFAFD1500D0A5E1 /* ProductSearchTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EE74491EFAFD1500D0A5E1 /* ProductSearchTableViewController.swift */; };
+		34EE744C1EFAFD4300D0A5E1 /* ProductTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 34EE744B1EFAFD4300D0A5E1 /* ProductTableViewCell.swift */; };
+		39E439FF6D165E2BB19B27F8 /* Pods_uFermera.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91A6420546C7FD44CD4BC1A6 /* Pods_uFermera.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXCopyFilesBuildPhase section */
+		3406C8951EE485BF0058272F /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
+/* Begin PBXFileReference section */
+		072A63A329A79E42F78A4DEB /* Pods-uFermera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uFermera.release.xcconfig"; path = "Pods/Target Support Files/Pods-uFermera/Pods-uFermera.release.xcconfig"; sourceTree = "<group>"; };
+		3406C8741EE480BF0058272F /* uFermera.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = uFermera.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		3406C8771EE480BF0058272F /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		3406C87C1EE480BF0058272F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		3406C87F1EE480BF0058272F /* uFermera.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = uFermera.xcdatamodel; sourceTree = "<group>"; };
+		3406C8811EE480BF0058272F /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		3406C8841EE480BF0058272F /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		3406C8861EE480BF0058272F /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		3406C88D1EE480E50058272F /* MapKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MapKit.framework; path = System/Library/Frameworks/MapKit.framework; sourceTree = SDKROOT; };
+		3406C8971EE486730058272F /* uFermeraAPI.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = uFermeraAPI.swift; sourceTree = "<group>"; };
+		3409E4661F1E6AE900A4B964 /* ProductDetailsTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductDetailsTableViewController.swift; sourceTree = "<group>"; };
+		3462B5D01EE7330800BD740B /* Product.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Product.swift; sourceTree = "<group>"; };
+		34EE74491EFAFD1500D0A5E1 /* ProductSearchTableViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductSearchTableViewController.swift; sourceTree = "<group>"; };
+		34EE744B1EFAFD4300D0A5E1 /* ProductTableViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ProductTableViewCell.swift; sourceTree = "<group>"; };
+		91A6420546C7FD44CD4BC1A6 /* Pods_uFermera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_uFermera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		993955961E95450D1541AF75 /* Pods-uFermera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-uFermera.debug.xcconfig"; path = "Pods/Target Support Files/Pods-uFermera/Pods-uFermera.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		3406C8711EE480BF0058272F /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3406C88E1EE480E50058272F /* MapKit.framework in Frameworks */,
+				39E439FF6D165E2BB19B27F8 /* Pods_uFermera.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		3406C86B1EE480BF0058272F = {
+			isa = PBXGroup;
+			children = (
+				3406C8761EE480BF0058272F /* uFermera */,
+				3406C8751EE480BF0058272F /* Products */,
+				3406C88C1EE480E50058272F /* Frameworks */,
+				8901F0F0F487273342B5C344 /* Pods */,
+			);
+			sourceTree = "<group>";
+		};
+		3406C8751EE480BF0058272F /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				3406C8741EE480BF0058272F /* uFermera.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		3406C8761EE480BF0058272F /* uFermera */ = {
+			isa = PBXGroup;
+			children = (
+				3406C8771EE480BF0058272F /* AppDelegate.swift */,
+				3406C87B1EE480BF0058272F /* Main.storyboard */,
+				3406C8971EE486730058272F /* uFermeraAPI.swift */,
+				3462B5D01EE7330800BD740B /* Product.swift */,
+				34EE74491EFAFD1500D0A5E1 /* ProductSearchTableViewController.swift */,
+				34EE744B1EFAFD4300D0A5E1 /* ProductTableViewCell.swift */,
+				3409E4661F1E6AE900A4B964 /* ProductDetailsTableViewController.swift */,
+				3406C8961EE4861D0058272F /* Supporting Files */,
+			);
+			path = uFermera;
+			sourceTree = "<group>";
+		};
+		3406C88C1EE480E50058272F /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				3406C88D1EE480E50058272F /* MapKit.framework */,
+				91A6420546C7FD44CD4BC1A6 /* Pods_uFermera.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3406C8961EE4861D0058272F /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				3406C8831EE480BF0058272F /* LaunchScreen.storyboard */,
+				3406C8811EE480BF0058272F /* Assets.xcassets */,
+				3406C8861EE480BF0058272F /* Info.plist */,
+				3406C87E1EE480BF0058272F /* uFermera.xcdatamodeld */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		8901F0F0F487273342B5C344 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				993955961E95450D1541AF75 /* Pods-uFermera.debug.xcconfig */,
+				072A63A329A79E42F78A4DEB /* Pods-uFermera.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		3406C8731EE480BF0058272F /* uFermera */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3406C8891EE480BF0058272F /* Build configuration list for PBXNativeTarget "uFermera" */;
+			buildPhases = (
+				CEC1AC5E3F79F045F84385CE /* [CP] Check Pods Manifest.lock */,
+				3406C8701EE480BF0058272F /* Sources */,
+				3406C8711EE480BF0058272F /* Frameworks */,
+				3406C8721EE480BF0058272F /* Resources */,
+				07035D5CB50A064B682B1154 /* [CP] Embed Pods Frameworks */,
+				23073045C4F46FDB3CAFB805 /* [CP] Copy Pods Resources */,
+				3406C8951EE485BF0058272F /* Embed Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = uFermera;
+			productName = uFermera;
+			productReference = 3406C8741EE480BF0058272F /* uFermera.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		3406C86C1EE480BF0058272F /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0820;
+				LastUpgradeCheck = 0900;
+				ORGANIZATIONNAME = uFermera;
+				TargetAttributes = {
+					3406C8731EE480BF0058272F = {
+						CreatedOnToolsVersion = 8.2.1;
+						DevelopmentTeam = K4PWUDJ3HE;
+						LastSwiftMigration = 0900;
+						ProvisioningStyle = Automatic;
+						SystemCapabilities = {
+							com.apple.Maps.iOS = {
+								enabled = 1;
+							};
+						};
+					};
+				};
+			};
+			buildConfigurationList = 3406C86F1EE480BF0058272F /* Build configuration list for PBXProject "uFermera" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 3406C86B1EE480BF0058272F;
+			productRefGroup = 3406C8751EE480BF0058272F /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				3406C8731EE480BF0058272F /* uFermera */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		3406C8721EE480BF0058272F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3406C8851EE480BF0058272F /* LaunchScreen.storyboard in Resources */,
+				3406C8821EE480BF0058272F /* Assets.xcassets in Resources */,
+				3406C87D1EE480BF0058272F /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		07035D5CB50A064B682B1154 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-uFermera/Pods-uFermera-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		23073045C4F46FDB3CAFB805 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-uFermera/Pods-uFermera-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		CEC1AC5E3F79F045F84385CE /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		3406C8701EE480BF0058272F /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3406C8801EE480BF0058272F /* uFermera.xcdatamodeld in Sources */,
+				34EE744A1EFAFD1500D0A5E1 /* ProductSearchTableViewController.swift in Sources */,
+				3462B5D11EE7330800BD740B /* Product.swift in Sources */,
+				3406C8981EE486730058272F /* uFermeraAPI.swift in Sources */,
+				3406C8781EE480BF0058272F /* AppDelegate.swift in Sources */,
+				3409E4671F1E6AE900A4B964 /* ProductDetailsTableViewController.swift in Sources */,
+				34EE744C1EFAFD4300D0A5E1 /* ProductTableViewCell.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		3406C87B1EE480BF0058272F /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3406C87C1EE480BF0058272F /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		3406C8831EE480BF0058272F /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3406C8841EE480BF0058272F /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		3406C8871EE480BF0058272F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		3406C8881EE480BF0058272F /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		3406C88A1EE480BF0058272F /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 993955961E95450D1541AF75 /* Pods-uFermera.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = K4PWUDJ3HE;
+				INFOPLIST_FILE = uFermera/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.uFermera;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		3406C88B1EE480BF0058272F /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 072A63A329A79E42F78A4DEB /* Pods-uFermera.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				DEVELOPMENT_TEAM = K4PWUDJ3HE;
+				INFOPLIST_FILE = uFermera/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = com.uFermera;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		3406C86F1EE480BF0058272F /* Build configuration list for PBXProject "uFermera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3406C8871EE480BF0058272F /* Debug */,
+				3406C8881EE480BF0058272F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3406C8891EE480BF0058272F /* Build configuration list for PBXNativeTarget "uFermera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3406C88A1EE480BF0058272F /* Debug */,
+				3406C88B1EE480BF0058272F /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		3406C87E1EE480BF0058272F /* uFermera.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				3406C87F1EE480BF0058272F /* uFermera.xcdatamodel */,
+			);
+			currentVersion = 3406C87F1EE480BF0058272F /* uFermera.xcdatamodel */;
+			path = uFermera.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = 3406C86C1EE480BF0058272F /* Project object */;
+}

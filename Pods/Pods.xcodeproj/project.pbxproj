@@ -1,0 +1,951 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		00493A80DAC6BF55CC2B6D2F87E6BDAB /* GCD+Siesta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4B13E6F91BCB4E8AC9848C3C20CC213D /* GCD+Siesta.swift */; };
+		0949367142DE9380D763132DE6CDA117 /* WeakCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = 96FEFED11DA8FB1958D860288EC9AD1B /* WeakCache.swift */; };
+		1058C99EBC037E775C90BF1BB65A684B /* RequestChaining.swift in Sources */ = {isa = PBXBuildFile; fileRef = E74715C6AD9E6BF8FD6F6B61A3AA241D /* RequestChaining.swift */; };
+		11FCFCD3FEDA1D9585CAF1D7D9F7390A /* NetworkRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27939178BDEB4809FBC1625B0E9FB0A7 /* NetworkRequest.swift */; };
+		160E60FA75E82A896217EA246375CFDE /* ConfigurationPatternConvertible.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1BDA23492040BEA05F68DF2D9342C306 /* ConfigurationPatternConvertible.swift */; };
+		18F4A68E653E0361E8720C1E99AC8469 /* Collection+Siesta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 154476046BC70122DC4EA487BEB4F5AD /* Collection+Siesta.swift */; };
+		1CBE9CC73DE1E7F9768F60A1D00D9AEA /* Ω_UI_Deprecations.swift in Sources */ = {isa = PBXBuildFile; fileRef = B367798C15CF88F6086EF3D9DE2DDB44 /* Ω_UI_Deprecations.swift */; };
+		1CEE94C60B47E7A415FA3EC646B74477 /* Progress.swift in Sources */ = {isa = PBXBuildFile; fileRef = E4454A7754A7B4046AF669D23EE4C657 /* Progress.swift */; };
+		2365FF4B0CB66D209D01BCB0B8D4AC6D /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		311030D35DB3D61F7E49F52C824478C8 /* SiestaUI.h in Headers */ = {isa = PBXBuildFile; fileRef = 7805F51ECA593696272BEC0306C69965 /* SiestaUI.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		32779C5FBB68D872DA80AD297D0208C4 /* DebugFormatting.swift in Sources */ = {isa = PBXBuildFile; fileRef = AFBA54D6806E32B926F21009FDDD1F57 /* DebugFormatting.swift */; };
+		33FFF4DC54E3DB794CEF12EC8D1B90A8 /* SwiftyJSON-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = EEE8CB56568E259B37BCD83066D6D86F /* SwiftyJSON-dummy.m */; };
+		3477E0E95D15EC8842916B84FA8A836C /* PipelineProcessing.swift in Sources */ = {isa = PBXBuildFile; fileRef = 78D95043A6047CE2CB0DC8BF3162EABC /* PipelineProcessing.swift */; };
+		352AE452C9E53DA0C91E91CAD7E83EA3 /* ProgressTracker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B316798A2A24969C43906F498B01B7F /* ProgressTracker.swift */; };
+		3622826958938346B9E7DCC1A7633015 /* Service.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3FDCDFB1095F37C41703CA44A2928C28 /* Service.swift */; };
+		37551D6A400CAC35D4E8E92386B29ACE /* StandardTransformers.swift in Sources */ = {isa = PBXBuildFile; fileRef = B63C706F7AB49EB3B5D9A834787BA514 /* StandardTransformers.swift */; };
+		3A31C5447F67598FB6752C5777CF178B /* Pods-uFermera-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = C079FCCF0D9EB6DF6CC80104689E2005 /* Pods-uFermera-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		48FF320E35C44C47AC31B74FAE653F1C /* Pods-uFermera-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = A39EB31A923021B456F4FD83457E3496 /* Pods-uFermera-dummy.m */; };
+		4C56162F9D5FB7999B4D8A0BBC7D91DA /* URL+Siesta.swift in Sources */ = {isa = PBXBuildFile; fileRef = B86BEB864FE38472F1E9DD4F4492A4C6 /* URL+Siesta.swift */; };
+		4C6B14863A9EDB1C05536E624E253236 /* ARC+Siesta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 047600BB4EF462593B389E1F823F57D4 /* ARC+Siesta.swift */; };
+		5208C9AE4C292F89A7F0904F50F7A34F /* Siesta.h in Headers */ = {isa = PBXBuildFile; fileRef = 4468A58F31266E2E5D068D8DB60C6D48 /* Siesta.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		520B6F997BAAA7FA3EDAD48EC2D4602A /* Siesta-ObjC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 8E8AD573FAF31DE8206E602BC808B4F8 /* Siesta-ObjC.swift */; };
+		581D9713C716E6D3E28547B35C892FD6 /* NetworkActivityIndicator.swift in Sources */ = {isa = PBXBuildFile; fileRef = BE395CFC1BDBC69B6E58CF346AF068FA /* NetworkActivityIndicator.swift */; };
+		5897E0C2C1324C74FFA837FDD8419650 /* Entity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 32BEA18A7EBBA1AFFCCBCE736A826B15 /* Entity.swift */; };
+		5CA8E460134D0C0DD67D6E6516CCFD78 /* OpenEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4D5E06C4535E5BFED51E014BC78AFA25 /* OpenEnum.swift */; };
+		5D6C1A67816B1FB900B31482AF17C089 /* Siesta-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = DEB07274944DB8DD5B8C7BC4D40262A5 /* Siesta-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		70C7F4DAB81D4BBA46C641537B66AD77 /* Resource.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE22B2EE469EBDDCB88E8A039C8BB13E /* Resource.swift */; };
+		71C396CD0C5A9FCC130497E2C73EE554 /* Configuration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 20BCCA100DA22329E6B61010CB1E6B66 /* Configuration.swift */; };
+		7298AFC70EC9E604712C68EF11851BD2 /* SwiftyJSON-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 0D24B8CACC2FEA933C42A72594B28322 /* SwiftyJSON-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		75E520F236830C952FB7E23C108E96C8 /* ResourceNavigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD26A187A158D09A509A47F490EBD899 /* ResourceNavigation.swift */; };
+		7E5E1F9D4A325DBBC2132F23E01F6B9D /* PipelineConfiguration.swift in Sources */ = {isa = PBXBuildFile; fileRef = 85415D4342E6A820CFC906759BF3A43D /* PipelineConfiguration.swift */; };
+		99FE2C0077DF8FDED3E02634D459908D /* Request.swift in Sources */ = {isa = PBXBuildFile; fileRef = 59068FFCD022D074E189209E5BE0ABBF /* Request.swift */; };
+		A12CACE908A4542BE3DB5CCE7400DDEB /* Networking.swift in Sources */ = {isa = PBXBuildFile; fileRef = A83E4A506DF144D2EBE86BA52D4D672F /* Networking.swift */; };
+		A218CBF60A39E1356DC5E8973E54CE63 /* Siesta-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 331E8AF399A289CE20DC1EFD9AF64C45 /* Siesta-dummy.m */; };
+		A8076CA615171D70FB4BAD3B7B118100 /* Logging.swift in Sources */ = {isa = PBXBuildFile; fileRef = D79C1142A626873006DEF0F0224D4120 /* Logging.swift */; };
+		AD7BDCAFED0BE4B22A11AE332EB41E16 /* RequestCallbacks.swift in Sources */ = {isa = PBXBuildFile; fileRef = B46B4FDDC0DF33AD1A369FCB912C3499 /* RequestCallbacks.swift */; };
+		AD9841A6AEDC194262C10EC717C0A63A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		B0935D82B488BE701A803882FBF0555D /* RequestCreation.swift in Sources */ = {isa = PBXBuildFile; fileRef = 759295C4412FE909819BD14AAA90E622 /* RequestCreation.swift */; };
+		B6826B1AA9A3A0271467DFB46C091F46 /* EntityCache.swift in Sources */ = {isa = PBXBuildFile; fileRef = D2E15AB3F73CFC2809498A38024BF79C /* EntityCache.swift */; };
+		C59ABE396F400E01DD619300A856F101 /* Networking-URLSession.swift in Sources */ = {isa = PBXBuildFile; fileRef = 67D9DFC4B9352586D7C7CB17784B80AB /* Networking-URLSession.swift */; };
+		C75A128BBDE39F3DA4EFBFC941992C78 /* String+Siesta.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5392E8338BF51C911A74F53698ABDD48 /* String+Siesta.swift */; };
+		CED67CF25A9C06CBB0FD5F5A5E548AC9 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */; };
+		DE57DEEA1B3496B76B674ABF922C20FF /* SiestaUI-ObjC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D7466D0BCECE0396B2B1C86587589A65 /* SiestaUI-ObjC.swift */; };
+		DEB07005A1800CC3C4B9DD17CA948DB3 /* ResourceStatusOverlay.swift in Sources */ = {isa = PBXBuildFile; fileRef = E914912C3C17286C26095FEACF037307 /* ResourceStatusOverlay.swift */; };
+		DF00F229C84958F328B296EAD15B1196 /* Regex+Siesta.swift in Sources */ = {isa = PBXBuildFile; fileRef = ACC8DD234C1DA569CC50EEC2D091E910 /* Regex+Siesta.swift */; };
+		DFF159D427CA4AD3FA7535FA3C56C412 /* ResourceStatusOverlay.xib in Sources */ = {isa = PBXBuildFile; fileRef = F64F3BD151FC0055EF5F9B65554A5F12 /* ResourceStatusOverlay.xib */; };
+		E6522E55B609E9205759260AD33FB0B2 /* Ω_Deprecations.swift in Sources */ = {isa = PBXBuildFile; fileRef = 08E06F8D3A90933D658E7A26D7D38F4F /* Ω_Deprecations.swift */; };
+		E7487A0D7D3A9720555A1CCA721F73DF /* RemoteImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 99C3400B0F17CD3254B41750CBF6B3AC /* RemoteImageView.swift */; };
+		E7662007DFDFCC1174D97EAA37D99779 /* ResponseTransformer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1DCC5960D7AC6196F280D219031D00DF /* ResponseTransformer.swift */; };
+		EF83AA71FAAC0138665233AC114BA186 /* RequestError.swift in Sources */ = {isa = PBXBuildFile; fileRef = E9566FC7D3C6C1B1F2B7DFE5F4238773 /* RequestError.swift */; };
+		F232F266E992A1061771CE8E5DCA3008 /* ResourceObserver.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7E56B480FE239FD8EDA48594895FE96E /* ResourceObserver.swift */; };
+		F287E0CA7349DBB7CC24FC23FB05B644 /* SwiftyJSON.swift in Sources */ = {isa = PBXBuildFile; fileRef = EB16742B814AB68876A1A244AE4464D5 /* SwiftyJSON.swift */; };
+		FAF33897D976883159CC0E05F93FEE0E /* ResourceStatusOverlay.xib in Resources */ = {isa = PBXBuildFile; fileRef = F64F3BD151FC0055EF5F9B65554A5F12 /* ResourceStatusOverlay.xib */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		A33481610E0AF49B82A6C8625E9F0D29 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 2C6950CCAEF98AFA8014B5E7DAB4F3B8;
+			remoteInfo = SwiftyJSON;
+		};
+		B4D7ECBA28910141BE907AA44F8FDB7E /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F8B78499C93FEE06208C898A2F603C2F;
+			remoteInfo = Siesta;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		047600BB4EF462593B389E1F823F57D4 /* ARC+Siesta.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "ARC+Siesta.swift"; path = "Source/Siesta/Support/ARC+Siesta.swift"; sourceTree = "<group>"; };
+		08E06F8D3A90933D658E7A26D7D38F4F /* Ω_Deprecations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Ω_Deprecations.swift"; path = "Source/Siesta/Support/Ω_Deprecations.swift"; sourceTree = "<group>"; };
+		0B316798A2A24969C43906F498B01B7F /* ProgressTracker.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ProgressTracker.swift; path = Source/Siesta/Request/ProgressTracker.swift; sourceTree = "<group>"; };
+		0D24B8CACC2FEA933C42A72594B28322 /* SwiftyJSON-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-umbrella.h"; sourceTree = "<group>"; };
+		154476046BC70122DC4EA487BEB4F5AD /* Collection+Siesta.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Collection+Siesta.swift"; path = "Source/Siesta/Support/Collection+Siesta.swift"; sourceTree = "<group>"; };
+		1BDA23492040BEA05F68DF2D9342C306 /* ConfigurationPatternConvertible.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ConfigurationPatternConvertible.swift; path = Source/Siesta/ConfigurationPatternConvertible.swift; sourceTree = "<group>"; };
+		1DCC5960D7AC6196F280D219031D00DF /* ResponseTransformer.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResponseTransformer.swift; path = Source/Siesta/Pipeline/ResponseTransformer.swift; sourceTree = "<group>"; };
+		20BCCA100DA22329E6B61010CB1E6B66 /* Configuration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Configuration.swift; path = Source/Siesta/Configuration.swift; sourceTree = "<group>"; };
+		27939178BDEB4809FBC1625B0E9FB0A7 /* NetworkRequest.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkRequest.swift; path = Source/Siesta/Request/NetworkRequest.swift; sourceTree = "<group>"; };
+		2912333BD1B363A263A8FE9CB67C03C7 /* Pods_uFermera.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_uFermera.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		32BEA18A7EBBA1AFFCCBCE736A826B15 /* Entity.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Entity.swift; path = Source/Siesta/Entity.swift; sourceTree = "<group>"; };
+		331E8AF399A289CE20DC1EFD9AF64C45 /* Siesta-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Siesta-dummy.m"; sourceTree = "<group>"; };
+		35AC90D216A8766F71A9C55CFF62A6A8 /* Pods-uFermera-resources.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-uFermera-resources.sh"; sourceTree = "<group>"; };
+		3A6DD7567DD974E4AE30C5F3084AEFE8 /* SwiftyJSON-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "SwiftyJSON-prefix.pch"; sourceTree = "<group>"; };
+		3B3FA0132932FE8CC2C41C418E522B5D /* SwiftyJSON.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = SwiftyJSON.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		3FDCDFB1095F37C41703CA44A2928C28 /* Service.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Service.swift; path = Source/Siesta/Service.swift; sourceTree = "<group>"; };
+		4468A58F31266E2E5D068D8DB60C6D48 /* Siesta.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = Siesta.h; path = Source/Siesta/Support/Siesta.h; sourceTree = "<group>"; };
+		4B13E6F91BCB4E8AC9848C3C20CC213D /* GCD+Siesta.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "GCD+Siesta.swift"; path = "Source/Siesta/Support/GCD+Siesta.swift"; sourceTree = "<group>"; };
+		4D2946E883961B7B5791AC1CB31B27F1 /* Pods-uFermera.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-uFermera.debug.xcconfig"; sourceTree = "<group>"; };
+		4D5E06C4535E5BFED51E014BC78AFA25 /* OpenEnum.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = OpenEnum.swift; path = Source/Siesta/Support/OpenEnum.swift; sourceTree = "<group>"; };
+		5392E8338BF51C911A74F53698ABDD48 /* String+Siesta.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "String+Siesta.swift"; path = "Source/Siesta/Support/String+Siesta.swift"; sourceTree = "<group>"; };
+		5535DF6E89770A6BD5B339C5A93295A9 /* SwiftyJSON.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = SwiftyJSON.modulemap; sourceTree = "<group>"; };
+		59068FFCD022D074E189209E5BE0ABBF /* Request.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Request.swift; path = Source/Siesta/Request/Request.swift; sourceTree = "<group>"; };
+		612F44221FC5998F7C116DF58787194B /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS10.3.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		67D9DFC4B9352586D7C7CB17784B80AB /* Networking-URLSession.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Networking-URLSession.swift"; path = "Source/Siesta/Networking-URLSession.swift"; sourceTree = "<group>"; };
+		759295C4412FE909819BD14AAA90E622 /* RequestCreation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestCreation.swift; path = Source/Siesta/Request/RequestCreation.swift; sourceTree = "<group>"; };
+		7805F51ECA593696272BEC0306C69965 /* SiestaUI.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; name = SiestaUI.h; path = Source/Siesta/Support/SiestaUI.h; sourceTree = "<group>"; };
+		78D95043A6047CE2CB0DC8BF3162EABC /* PipelineProcessing.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PipelineProcessing.swift; path = Source/Siesta/Pipeline/PipelineProcessing.swift; sourceTree = "<group>"; };
+		7E26A30B5F25B9CD1DB43843A73FB57D /* Siesta.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Siesta.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		7E56B480FE239FD8EDA48594895FE96E /* ResourceObserver.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResourceObserver.swift; path = Source/Siesta/Resource/ResourceObserver.swift; sourceTree = "<group>"; };
+		85415D4342E6A820CFC906759BF3A43D /* PipelineConfiguration.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = PipelineConfiguration.swift; path = Source/Siesta/Pipeline/PipelineConfiguration.swift; sourceTree = "<group>"; };
+		88F6E9C52DBD5A2A7293DD38F422C5EA /* Pods-uFermera-acknowledgements.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "Pods-uFermera-acknowledgements.plist"; sourceTree = "<group>"; };
+		89AF99A0D858BB4D224E9C6EFC44DA53 /* Pods-uFermera.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = "Pods-uFermera.release.xcconfig"; sourceTree = "<group>"; };
+		8E8AD573FAF31DE8206E602BC808B4F8 /* Siesta-ObjC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Siesta-ObjC.swift"; path = "Source/Siesta/Support/Siesta-ObjC.swift"; sourceTree = "<group>"; };
+		934517ADA4BADBD78164717D8746729C /* Pods-uFermera-frameworks.sh */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.script.sh; path = "Pods-uFermera-frameworks.sh"; sourceTree = "<group>"; };
+		93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; name = Podfile; path = ../Podfile; sourceTree = SOURCE_ROOT; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		968E9BD12A2FAC73D33C4BF2FE26432F /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		96FEFED11DA8FB1958D860288EC9AD1B /* WeakCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = WeakCache.swift; path = Source/Siesta/Support/WeakCache.swift; sourceTree = "<group>"; };
+		99C3400B0F17CD3254B41750CBF6B3AC /* RemoteImageView.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RemoteImageView.swift; path = Source/SiestaUI/RemoteImageView.swift; sourceTree = "<group>"; };
+		A39EB31A923021B456F4FD83457E3496 /* Pods-uFermera-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "Pods-uFermera-dummy.m"; sourceTree = "<group>"; };
+		A83E4A506DF144D2EBE86BA52D4D672F /* Networking.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Networking.swift; path = Source/Siesta/Networking.swift; sourceTree = "<group>"; };
+		ACC8DD234C1DA569CC50EEC2D091E910 /* Regex+Siesta.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Regex+Siesta.swift"; path = "Source/Siesta/Support/Regex+Siesta.swift"; sourceTree = "<group>"; };
+		AE4BB7AAAD5A5C0982C1F4111FF9034E /* Siesta.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = Siesta.modulemap; sourceTree = "<group>"; };
+		AEA052FB38D30D7C2F8070C9F9FC301F /* Pods-uFermera.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = "sourcecode.module-map"; path = "Pods-uFermera.modulemap"; sourceTree = "<group>"; };
+		AFBA54D6806E32B926F21009FDDD1F57 /* DebugFormatting.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = DebugFormatting.swift; path = Source/Siesta/Support/DebugFormatting.swift; sourceTree = "<group>"; };
+		B0CF46C3385B12CF892F62F0292843B7 /* Siesta-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Siesta-prefix.pch"; sourceTree = "<group>"; };
+		B367798C15CF88F6086EF3D9DE2DDB44 /* Ω_UI_Deprecations.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "Ω_UI_Deprecations.swift"; path = "Source/SiestaUI/Ω_UI_Deprecations.swift"; sourceTree = "<group>"; };
+		B46B4FDDC0DF33AD1A369FCB912C3499 /* RequestCallbacks.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestCallbacks.swift; path = Source/Siesta/Request/RequestCallbacks.swift; sourceTree = "<group>"; };
+		B51DDF844AD9E8C11965EA14D0422F6A /* Siesta.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = Siesta.xcconfig; sourceTree = "<group>"; };
+		B63C706F7AB49EB3B5D9A834787BA514 /* StandardTransformers.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = StandardTransformers.swift; path = Source/Siesta/Pipeline/StandardTransformers.swift; sourceTree = "<group>"; };
+		B86BEB864FE38472F1E9DD4F4492A4C6 /* URL+Siesta.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "URL+Siesta.swift"; path = "Source/Siesta/Support/URL+Siesta.swift"; sourceTree = "<group>"; };
+		B8D90C79860ECE8DF6DBC88FE57D88AA /* Pods-uFermera-acknowledgements.markdown */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; path = "Pods-uFermera-acknowledgements.markdown"; sourceTree = "<group>"; };
+		BE395CFC1BDBC69B6E58CF346AF068FA /* NetworkActivityIndicator.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = NetworkActivityIndicator.swift; path = Source/SiestaUI/NetworkActivityIndicator.swift; sourceTree = "<group>"; };
+		C079FCCF0D9EB6DF6CC80104689E2005 /* Pods-uFermera-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Pods-uFermera-umbrella.h"; sourceTree = "<group>"; };
+		C481C015AEC3AD7DABEE73B6BEED07C9 /* SwiftyJSON.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = SwiftyJSON.xcconfig; sourceTree = "<group>"; };
+		CE22B2EE469EBDDCB88E8A039C8BB13E /* Resource.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Resource.swift; path = Source/Siesta/Resource/Resource.swift; sourceTree = "<group>"; };
+		D2E15AB3F73CFC2809498A38024BF79C /* EntityCache.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = EntityCache.swift; path = Source/Siesta/EntityCache.swift; sourceTree = "<group>"; };
+		D7466D0BCECE0396B2B1C86587589A65 /* SiestaUI-ObjC.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "SiestaUI-ObjC.swift"; path = "Source/SiestaUI/SiestaUI-ObjC.swift"; sourceTree = "<group>"; };
+		D79C1142A626873006DEF0F0224D4120 /* Logging.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Logging.swift; path = Source/Siesta/Support/Logging.swift; sourceTree = "<group>"; };
+		DEB07274944DB8DD5B8C7BC4D40262A5 /* Siesta-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "Siesta-umbrella.h"; sourceTree = "<group>"; };
+		E3CC6ED18C1A3998429B7986A9DF4236 /* Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		E4454A7754A7B4046AF669D23EE4C657 /* Progress.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Progress.swift; path = Source/Siesta/Support/Progress.swift; sourceTree = "<group>"; };
+		E74715C6AD9E6BF8FD6F6B61A3AA241D /* RequestChaining.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestChaining.swift; path = Source/Siesta/Request/RequestChaining.swift; sourceTree = "<group>"; };
+		E914912C3C17286C26095FEACF037307 /* ResourceStatusOverlay.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResourceStatusOverlay.swift; path = Source/SiestaUI/ResourceStatusOverlay.swift; sourceTree = "<group>"; };
+		E9566FC7D3C6C1B1F2B7DFE5F4238773 /* RequestError.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RequestError.swift; path = Source/Siesta/RequestError.swift; sourceTree = "<group>"; };
+		EB16742B814AB68876A1A244AE4464D5 /* SwiftyJSON.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = SwiftyJSON.swift; path = Source/SwiftyJSON.swift; sourceTree = "<group>"; };
+		EEE8CB56568E259B37BCD83066D6D86F /* SwiftyJSON-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "SwiftyJSON-dummy.m"; sourceTree = "<group>"; };
+		F64F3BD151FC0055EF5F9B65554A5F12 /* ResourceStatusOverlay.xib */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = file.xib; name = ResourceStatusOverlay.xib; path = Source/SiestaUI/ResourceStatusOverlay.xib; sourceTree = "<group>"; };
+		FD26A187A158D09A509A47F490EBD899 /* ResourceNavigation.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ResourceNavigation.swift; path = Source/Siesta/Resource/ResourceNavigation.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		057B3AE50FD674DD5EEE5A4A2BD86812 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				CED67CF25A9C06CBB0FD5F5A5E548AC9 /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		190A4FC07708918C0163DD52F7F42DEA /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				2365FF4B0CB66D209D01BCB0B8D4AC6D /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		66CA4FCDD6AFA2650A892C565E2E682C /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				AD9841A6AEDC194262C10EC717C0A63A /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		024D475170A1FE3DEC7790079393B45F /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				047600BB4EF462593B389E1F823F57D4 /* ARC+Siesta.swift */,
+				154476046BC70122DC4EA487BEB4F5AD /* Collection+Siesta.swift */,
+				20BCCA100DA22329E6B61010CB1E6B66 /* Configuration.swift */,
+				1BDA23492040BEA05F68DF2D9342C306 /* ConfigurationPatternConvertible.swift */,
+				AFBA54D6806E32B926F21009FDDD1F57 /* DebugFormatting.swift */,
+				32BEA18A7EBBA1AFFCCBCE736A826B15 /* Entity.swift */,
+				D2E15AB3F73CFC2809498A38024BF79C /* EntityCache.swift */,
+				4B13E6F91BCB4E8AC9848C3C20CC213D /* GCD+Siesta.swift */,
+				D79C1142A626873006DEF0F0224D4120 /* Logging.swift */,
+				A83E4A506DF144D2EBE86BA52D4D672F /* Networking.swift */,
+				67D9DFC4B9352586D7C7CB17784B80AB /* Networking-URLSession.swift */,
+				27939178BDEB4809FBC1625B0E9FB0A7 /* NetworkRequest.swift */,
+				4D5E06C4535E5BFED51E014BC78AFA25 /* OpenEnum.swift */,
+				85415D4342E6A820CFC906759BF3A43D /* PipelineConfiguration.swift */,
+				78D95043A6047CE2CB0DC8BF3162EABC /* PipelineProcessing.swift */,
+				E4454A7754A7B4046AF669D23EE4C657 /* Progress.swift */,
+				0B316798A2A24969C43906F498B01B7F /* ProgressTracker.swift */,
+				ACC8DD234C1DA569CC50EEC2D091E910 /* Regex+Siesta.swift */,
+				59068FFCD022D074E189209E5BE0ABBF /* Request.swift */,
+				B46B4FDDC0DF33AD1A369FCB912C3499 /* RequestCallbacks.swift */,
+				E74715C6AD9E6BF8FD6F6B61A3AA241D /* RequestChaining.swift */,
+				759295C4412FE909819BD14AAA90E622 /* RequestCreation.swift */,
+				E9566FC7D3C6C1B1F2B7DFE5F4238773 /* RequestError.swift */,
+				CE22B2EE469EBDDCB88E8A039C8BB13E /* Resource.swift */,
+				FD26A187A158D09A509A47F490EBD899 /* ResourceNavigation.swift */,
+				7E56B480FE239FD8EDA48594895FE96E /* ResourceObserver.swift */,
+				1DCC5960D7AC6196F280D219031D00DF /* ResponseTransformer.swift */,
+				3FDCDFB1095F37C41703CA44A2928C28 /* Service.swift */,
+				4468A58F31266E2E5D068D8DB60C6D48 /* Siesta.h */,
+				8E8AD573FAF31DE8206E602BC808B4F8 /* Siesta-ObjC.swift */,
+				7805F51ECA593696272BEC0306C69965 /* SiestaUI.h */,
+				B63C706F7AB49EB3B5D9A834787BA514 /* StandardTransformers.swift */,
+				5392E8338BF51C911A74F53698ABDD48 /* String+Siesta.swift */,
+				B86BEB864FE38472F1E9DD4F4492A4C6 /* URL+Siesta.swift */,
+				96FEFED11DA8FB1958D860288EC9AD1B /* WeakCache.swift */,
+				08E06F8D3A90933D658E7A26D7D38F4F /* Ω_Deprecations.swift */,
+			);
+			name = Core;
+			sourceTree = "<group>";
+		};
+		0767F48865AC0F5D21E86D88450C8FFB /* Siesta */ = {
+			isa = PBXGroup;
+			children = (
+				024D475170A1FE3DEC7790079393B45F /* Core */,
+				D704A6E563F1F48D4DCF56854C753BA9 /* Support Files */,
+				6CC463559DD566AB384884D9E683B7A9 /* UI */,
+			);
+			path = Siesta;
+			sourceTree = "<group>";
+		};
+		125D2B37A894BAD2F45C3DD346CFE9A9 /* Targets Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6D1B6FF53F4347AF5A6F79EE91BF6272 /* Pods-uFermera */,
+			);
+			name = "Targets Support Files";
+			sourceTree = "<group>";
+		};
+		25F0700220AE7E601DDCEDC223E83516 /* SwiftyJSON */ = {
+			isa = PBXGroup;
+			children = (
+				EB16742B814AB68876A1A244AE4464D5 /* SwiftyJSON.swift */,
+				2BCBA66E880266D7E6B51DEE7CC63671 /* Support Files */,
+			);
+			path = SwiftyJSON;
+			sourceTree = "<group>";
+		};
+		2BCBA66E880266D7E6B51DEE7CC63671 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				968E9BD12A2FAC73D33C4BF2FE26432F /* Info.plist */,
+				5535DF6E89770A6BD5B339C5A93295A9 /* SwiftyJSON.modulemap */,
+				C481C015AEC3AD7DABEE73B6BEED07C9 /* SwiftyJSON.xcconfig */,
+				EEE8CB56568E259B37BCD83066D6D86F /* SwiftyJSON-dummy.m */,
+				3A6DD7567DD974E4AE30C5F3084AEFE8 /* SwiftyJSON-prefix.pch */,
+				0D24B8CACC2FEA933C42A72594B28322 /* SwiftyJSON-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/SwiftyJSON";
+			sourceTree = "<group>";
+		};
+		4DED733A464B4F4A26C4E102B66F383D /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				0767F48865AC0F5D21E86D88450C8FFB /* Siesta */,
+				25F0700220AE7E601DDCEDC223E83516 /* SwiftyJSON */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		6CC463559DD566AB384884D9E683B7A9 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				BE395CFC1BDBC69B6E58CF346AF068FA /* NetworkActivityIndicator.swift */,
+				99C3400B0F17CD3254B41750CBF6B3AC /* RemoteImageView.swift */,
+				E914912C3C17286C26095FEACF037307 /* ResourceStatusOverlay.swift */,
+				F64F3BD151FC0055EF5F9B65554A5F12 /* ResourceStatusOverlay.xib */,
+				D7466D0BCECE0396B2B1C86587589A65 /* SiestaUI-ObjC.swift */,
+				B367798C15CF88F6086EF3D9DE2DDB44 /* Ω_UI_Deprecations.swift */,
+				74F448CD097FC84A195C266CA916667C /* Resources */,
+			);
+			name = UI;
+			sourceTree = "<group>";
+		};
+		6D1B6FF53F4347AF5A6F79EE91BF6272 /* Pods-uFermera */ = {
+			isa = PBXGroup;
+			children = (
+				E3CC6ED18C1A3998429B7986A9DF4236 /* Info.plist */,
+				AEA052FB38D30D7C2F8070C9F9FC301F /* Pods-uFermera.modulemap */,
+				B8D90C79860ECE8DF6DBC88FE57D88AA /* Pods-uFermera-acknowledgements.markdown */,
+				88F6E9C52DBD5A2A7293DD38F422C5EA /* Pods-uFermera-acknowledgements.plist */,
+				A39EB31A923021B456F4FD83457E3496 /* Pods-uFermera-dummy.m */,
+				934517ADA4BADBD78164717D8746729C /* Pods-uFermera-frameworks.sh */,
+				35AC90D216A8766F71A9C55CFF62A6A8 /* Pods-uFermera-resources.sh */,
+				C079FCCF0D9EB6DF6CC80104689E2005 /* Pods-uFermera-umbrella.h */,
+				4D2946E883961B7B5791AC1CB31B27F1 /* Pods-uFermera.debug.xcconfig */,
+				89AF99A0D858BB4D224E9C6EFC44DA53 /* Pods-uFermera.release.xcconfig */,
+			);
+			name = "Pods-uFermera";
+			path = "Target Support Files/Pods-uFermera";
+			sourceTree = "<group>";
+		};
+		74F448CD097FC84A195C266CA916667C /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		7DB346D0F39D3F0E887471402A8071AB = {
+			isa = PBXGroup;
+			children = (
+				93A4A3777CF96A4AAC1D13BA6DCCEA73 /* Podfile */,
+				BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */,
+				4DED733A464B4F4A26C4E102B66F383D /* Pods */,
+				AE85677048B587A3135A8415E2AE1409 /* Products */,
+				125D2B37A894BAD2F45C3DD346CFE9A9 /* Targets Support Files */,
+			);
+			sourceTree = "<group>";
+		};
+		AE85677048B587A3135A8415E2AE1409 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				2912333BD1B363A263A8FE9CB67C03C7 /* Pods_uFermera.framework */,
+				7E26A30B5F25B9CD1DB43843A73FB57D /* Siesta.framework */,
+				3B3FA0132932FE8CC2C41C418E522B5D /* SwiftyJSON.framework */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		BC3CA7F9E30CC8F7E2DD044DD34432FC /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				D35AF013A5F0BAD4F32504907A52519E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		D35AF013A5F0BAD4F32504907A52519E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				6604A7D69453B4569E4E4827FB9155A9 /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+		D704A6E563F1F48D4DCF56854C753BA9 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				612F44221FC5998F7C116DF58787194B /* Info.plist */,
+				AE4BB7AAAD5A5C0982C1F4111FF9034E /* Siesta.modulemap */,
+				B51DDF844AD9E8C11965EA14D0422F6A /* Siesta.xcconfig */,
+				331E8AF399A289CE20DC1EFD9AF64C45 /* Siesta-dummy.m */,
+				B0CF46C3385B12CF892F62F0292843B7 /* Siesta-prefix.pch */,
+				DEB07274944DB8DD5B8C7BC4D40262A5 /* Siesta-umbrella.h */,
+			);
+			name = "Support Files";
+			path = "../Target Support Files/Siesta";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		01FFFA07DEE9C3018304EBF30DEAF26A /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				7298AFC70EC9E604712C68EF11851BD2 /* SwiftyJSON-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		9795206836F033E65686D60FC47B09B0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3A31C5447F67598FB6752C5777CF178B /* Pods-uFermera-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		CE8F3A26E2647C74EC68466E491AB2F0 /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				5D6C1A67816B1FB900B31482AF17C089 /* Siesta-umbrella.h in Headers */,
+				5208C9AE4C292F89A7F0904F50F7A34F /* Siesta.h in Headers */,
+				311030D35DB3D61F7E49F52C824478C8 /* SiestaUI.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		2C6950CCAEF98AFA8014B5E7DAB4F3B8 /* SwiftyJSON */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 802B281E6C5C44C05F6C1A5C2A94058E /* Build configuration list for PBXNativeTarget "SwiftyJSON" */;
+			buildPhases = (
+				0131B7B7C7BB8A4EEBF45B6754602C48 /* Sources */,
+				190A4FC07708918C0163DD52F7F42DEA /* Frameworks */,
+				01FFFA07DEE9C3018304EBF30DEAF26A /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = SwiftyJSON;
+			productName = SwiftyJSON;
+			productReference = 3B3FA0132932FE8CC2C41C418E522B5D /* SwiftyJSON.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		BD61BDAEEC5413C3DFAB13FA7B2592DC /* Pods-uFermera */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = B5F1932227CB4C5191AFC32D7AF589EF /* Build configuration list for PBXNativeTarget "Pods-uFermera" */;
+			buildPhases = (
+				6D4E44AAA6B6D739E19E2A84478AC4F4 /* Sources */,
+				057B3AE50FD674DD5EEE5A4A2BD86812 /* Frameworks */,
+				9795206836F033E65686D60FC47B09B0 /* Headers */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				C1C3BEA5B43BB7C3268A45DFCA640A16 /* PBXTargetDependency */,
+				923ADABD5BCB2C310DFC2D498E753B7E /* PBXTargetDependency */,
+			);
+			name = "Pods-uFermera";
+			productName = "Pods-uFermera";
+			productReference = 2912333BD1B363A263A8FE9CB67C03C7 /* Pods_uFermera.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+		F8B78499C93FEE06208C898A2F603C2F /* Siesta */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4B1250D82E420E11ECF9481B417EA2DF /* Build configuration list for PBXNativeTarget "Siesta" */;
+			buildPhases = (
+				06FC5366FF5DA3D5D7A54E6CF3A21C77 /* Sources */,
+				66CA4FCDD6AFA2650A892C565E2E682C /* Frameworks */,
+				CE8F3A26E2647C74EC68466E491AB2F0 /* Headers */,
+				58FE15DBFBF03079116C7F43389A3721 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Siesta;
+			productName = Siesta;
+			productReference = 7E26A30B5F25B9CD1DB43843A73FB57D /* Siesta.framework */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D41D8CD98F00B204E9800998ECF8427E /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0830;
+				LastUpgradeCheck = 0900;
+				TargetAttributes = {
+					2C6950CCAEF98AFA8014B5E7DAB4F3B8 = {
+						LastSwiftMigration = 0900;
+					};
+					BD61BDAEEC5413C3DFAB13FA7B2592DC = {
+						LastSwiftMigration = 0900;
+					};
+					F8B78499C93FEE06208C898A2F603C2F = {
+						LastSwiftMigration = 0900;
+					};
+				};
+			};
+			buildConfigurationList = 2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 7DB346D0F39D3F0E887471402A8071AB;
+			productRefGroup = AE85677048B587A3135A8415E2AE1409 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				BD61BDAEEC5413C3DFAB13FA7B2592DC /* Pods-uFermera */,
+				F8B78499C93FEE06208C898A2F603C2F /* Siesta */,
+				2C6950CCAEF98AFA8014B5E7DAB4F3B8 /* SwiftyJSON */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		58FE15DBFBF03079116C7F43389A3721 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				FAF33897D976883159CC0E05F93FEE0E /* ResourceStatusOverlay.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		0131B7B7C7BB8A4EEBF45B6754602C48 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				33FFF4DC54E3DB794CEF12EC8D1B90A8 /* SwiftyJSON-dummy.m in Sources */,
+				F287E0CA7349DBB7CC24FC23FB05B644 /* SwiftyJSON.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		06FC5366FF5DA3D5D7A54E6CF3A21C77 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4C6B14863A9EDB1C05536E624E253236 /* ARC+Siesta.swift in Sources */,
+				18F4A68E653E0361E8720C1E99AC8469 /* Collection+Siesta.swift in Sources */,
+				71C396CD0C5A9FCC130497E2C73EE554 /* Configuration.swift in Sources */,
+				160E60FA75E82A896217EA246375CFDE /* ConfigurationPatternConvertible.swift in Sources */,
+				32779C5FBB68D872DA80AD297D0208C4 /* DebugFormatting.swift in Sources */,
+				5897E0C2C1324C74FFA837FDD8419650 /* Entity.swift in Sources */,
+				B6826B1AA9A3A0271467DFB46C091F46 /* EntityCache.swift in Sources */,
+				00493A80DAC6BF55CC2B6D2F87E6BDAB /* GCD+Siesta.swift in Sources */,
+				A8076CA615171D70FB4BAD3B7B118100 /* Logging.swift in Sources */,
+				581D9713C716E6D3E28547B35C892FD6 /* NetworkActivityIndicator.swift in Sources */,
+				C59ABE396F400E01DD619300A856F101 /* Networking-URLSession.swift in Sources */,
+				A12CACE908A4542BE3DB5CCE7400DDEB /* Networking.swift in Sources */,
+				11FCFCD3FEDA1D9585CAF1D7D9F7390A /* NetworkRequest.swift in Sources */,
+				5CA8E460134D0C0DD67D6E6516CCFD78 /* OpenEnum.swift in Sources */,
+				7E5E1F9D4A325DBBC2132F23E01F6B9D /* PipelineConfiguration.swift in Sources */,
+				3477E0E95D15EC8842916B84FA8A836C /* PipelineProcessing.swift in Sources */,
+				1CEE94C60B47E7A415FA3EC646B74477 /* Progress.swift in Sources */,
+				352AE452C9E53DA0C91E91CAD7E83EA3 /* ProgressTracker.swift in Sources */,
+				DF00F229C84958F328B296EAD15B1196 /* Regex+Siesta.swift in Sources */,
+				E7487A0D7D3A9720555A1CCA721F73DF /* RemoteImageView.swift in Sources */,
+				99FE2C0077DF8FDED3E02634D459908D /* Request.swift in Sources */,
+				AD7BDCAFED0BE4B22A11AE332EB41E16 /* RequestCallbacks.swift in Sources */,
+				1058C99EBC037E775C90BF1BB65A684B /* RequestChaining.swift in Sources */,
+				B0935D82B488BE701A803882FBF0555D /* RequestCreation.swift in Sources */,
+				EF83AA71FAAC0138665233AC114BA186 /* RequestError.swift in Sources */,
+				70C7F4DAB81D4BBA46C641537B66AD77 /* Resource.swift in Sources */,
+				75E520F236830C952FB7E23C108E96C8 /* ResourceNavigation.swift in Sources */,
+				F232F266E992A1061771CE8E5DCA3008 /* ResourceObserver.swift in Sources */,
+				DEB07005A1800CC3C4B9DD17CA948DB3 /* ResourceStatusOverlay.swift in Sources */,
+				DFF159D427CA4AD3FA7535FA3C56C412 /* ResourceStatusOverlay.xib in Sources */,
+				E7662007DFDFCC1174D97EAA37D99779 /* ResponseTransformer.swift in Sources */,
+				3622826958938346B9E7DCC1A7633015 /* Service.swift in Sources */,
+				A218CBF60A39E1356DC5E8973E54CE63 /* Siesta-dummy.m in Sources */,
+				520B6F997BAAA7FA3EDAD48EC2D4602A /* Siesta-ObjC.swift in Sources */,
+				DE57DEEA1B3496B76B674ABF922C20FF /* SiestaUI-ObjC.swift in Sources */,
+				37551D6A400CAC35D4E8E92386B29ACE /* StandardTransformers.swift in Sources */,
+				C75A128BBDE39F3DA4EFBFC941992C78 /* String+Siesta.swift in Sources */,
+				4C56162F9D5FB7999B4D8A0BBC7D91DA /* URL+Siesta.swift in Sources */,
+				0949367142DE9380D763132DE6CDA117 /* WeakCache.swift in Sources */,
+				E6522E55B609E9205759260AD33FB0B2 /* Ω_Deprecations.swift in Sources */,
+				1CBE9CC73DE1E7F9768F60A1D00D9AEA /* Ω_UI_Deprecations.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		6D4E44AAA6B6D739E19E2A84478AC4F4 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				48FF320E35C44C47AC31B74FAE653F1C /* Pods-uFermera-dummy.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		923ADABD5BCB2C310DFC2D498E753B7E /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = SwiftyJSON;
+			target = 2C6950CCAEF98AFA8014B5E7DAB4F3B8 /* SwiftyJSON */;
+			targetProxy = A33481610E0AF49B82A6C8625E9F0D29 /* PBXContainerItemProxy */;
+		};
+		C1C3BEA5B43BB7C3268A45DFCA640A16 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			name = Siesta;
+			target = F8B78499C93FEE06208C898A2F603C2F /* Siesta */;
+			targetProxy = B4D7ECBA28910141BE907AA44F8FDB7E /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		643C76AA582046977B7877822ED7A258 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				ONLY_ACTIVE_ARCH = YES;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		6749493B4E9A508754A6AB796BD07F85 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 89AF99A0D858BB4D224E9C6EFC44DA53 /* Pods-uFermera.release.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-uFermera/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-uFermera/Pods-uFermera.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_uFermera;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		6950B179CFE7C7224B929A70B94F6FAD /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C481C015AEC3AD7DABEE73B6BEED07C9 /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		9FD41387325F23A3EC78659469D188B9 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B51DDF844AD9E8C11965EA14D0422F6A /* Siesta.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Siesta/Siesta-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Siesta/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Siesta/Siesta.modulemap";
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = Siesta;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		C03B8870130C98D1B02B59D003687524 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGNING_REQUIRED = NO;
+				COPY_PHASE_STRIP = YES;
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				PROVISIONING_PROFILE_SPECIFIER = NO_SIGNING/;
+				STRIP_INSTALLED_PRODUCT = NO;
+				SYMROOT = "${SRCROOT}/../build";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		C4D24F5F0BB6BD3FFFFCE8A2E47CA004 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = B51DDF844AD9E8C11965EA14D0422F6A /* Siesta.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/Siesta/Siesta-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/Siesta/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/Siesta/Siesta.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = Siesta;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		E0548E66621BE8D050A764AF7CC7D6A4 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = C481C015AEC3AD7DABEE73B6BEED07C9 /* SwiftyJSON.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREFIX_HEADER = "Target Support Files/SwiftyJSON/SwiftyJSON-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/SwiftyJSON/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MODULEMAP_FILE = "Target Support Files/SwiftyJSON/SwiftyJSON.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = SwiftyJSON;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+		EA448592C8A8AC5E75DA51E1A8F1D25A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 4D2946E883961B7B5791AC1CB31B27F1 /* Pods-uFermera.debug.xcconfig */;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_NO_COMMON_BLOCKS = YES;
+				INFOPLIST_FILE = "Target Support Files/Pods-uFermera/Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/Pods-uFermera/Pods-uFermera.modulemap";
+				MTL_ENABLE_DEBUG_INFO = YES;
+				OTHER_LDFLAGS = "";
+				OTHER_LIBTOOLFLAGS = "";
+				PODS_ROOT = "$(SRCROOT)";
+				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.${PRODUCT_NAME:rfc1034identifier}";
+				PRODUCT_NAME = Pods_uFermera;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 3.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2D8E8EC45A3A1A1D94AE762CB5028504 /* Build configuration list for PBXProject "Pods" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				643C76AA582046977B7877822ED7A258 /* Debug */,
+				C03B8870130C98D1B02B59D003687524 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4B1250D82E420E11ECF9481B417EA2DF /* Build configuration list for PBXNativeTarget "Siesta" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				C4D24F5F0BB6BD3FFFFCE8A2E47CA004 /* Debug */,
+				9FD41387325F23A3EC78659469D188B9 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		802B281E6C5C44C05F6C1A5C2A94058E /* Build configuration list for PBXNativeTarget "SwiftyJSON" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				E0548E66621BE8D050A764AF7CC7D6A4 /* Debug */,
+				6950B179CFE7C7224B929A70B94F6FAD /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		B5F1932227CB4C5191AFC32D7AF589EF /* Build configuration list for PBXNativeTarget "Pods-uFermera" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA448592C8A8AC5E75DA51E1A8F1D25A /* Debug */,
+				6749493B4E9A508754A6AB796BD07F85 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = D41D8CD98F00B204E9800998ECF8427E /* Project object */;
+}
