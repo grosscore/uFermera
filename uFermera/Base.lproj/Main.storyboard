@@ -98,7 +98,13 @@
                             <outlet property="delegate" destination="rKY-FJ-brA" id="7pD-De-7GD"/>
                         </connections>
                     </tableView>
-                    <navigationItem key="navigationItem" id="eWS-CR-tGX"/>
+                    <navigationItem key="navigationItem" id="eWS-CR-tGX">
+                        <barButtonItem key="rightBarButtonItem" title="Return" id="rOP-6I-2pJ">
+                            <connections>
+                                <action selector="returntAction:" destination="rKY-FJ-brA" id="UmO-Wc-drI"/>
+                            </connections>
+                        </barButtonItem>
+                    </navigationItem>
                 </tableViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="ro0-nI-3yb" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>

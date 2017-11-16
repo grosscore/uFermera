@@ -1,6 +1,7 @@
 import Siesta
 import SwiftyJSON
 import Foundation
+import CoreLocation
 
 let uFermeraAPI = _uFermeraAPI()
 
@@ -24,7 +25,7 @@ class _uFermeraAPI: Service {
     }
     
     var firstResource: Resource{return service.resource("/products/")}
-    
+        
 }
 
 

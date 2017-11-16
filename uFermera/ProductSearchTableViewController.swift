@@ -34,19 +34,20 @@ class ProductSearchTableViewController: UITableViewController, ResourceObserver,
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        statusOverlay.embed(in: self)
-        
         //show local products
+        
         if CLLocationManager.locationServicesEnabled() && CLLocationManager.authorizationStatus() == .authorizedWhenInUse {
             if let userCoordinates = appDelegate.locationManager.location?.coordinate {
-                    productsResource = uFermeraAPI.firstResource.withParam("lat", String(userCoordinates.latitude)).withParam("lon", String(userCoordinates.longitude))
+                productsResource = uFermeraAPI.firstResource.withParam("lat", String(userCoordinates.latitude)).withParam("lon", String(userCoordinates.longitude))
             }
         } else {
             if let locale = Locale.current.regionCode {
                 productsResource = uFermeraAPI.firstResource.withParam("country_code", locale)
             }
-        
         }
+
+        
+        statusOverlay.embed(in: self)
         
         //search part implementation
         
@@ -63,6 +64,7 @@ class ProductSearchTableViewController: UITableViewController, ResourceObserver,
         navigationItem.backBarButtonItem = UIBarButtonItem(title: "", style: .plain, target: nil, action: nil)
         
     }
+    
     
 //------------------------- MARK: - Table view data source ---------------------------------------------------------
 
@@ -112,7 +114,7 @@ class ProductSearchTableViewController: UITableViewController, ResourceObserver,
         searchString = searchController.searchBar.text!
         if !searchString.isEmpty {
             products.removeAll()
-            productsResource = productsResource!.withParam("q", searchString)
+            productsResource = productsResource?.withParam("q", searchString)
         }
         
         searchController.searchBar.resignFirstResponder()
@@ -132,4 +134,9 @@ class ProductSearchTableViewController: UITableViewController, ResourceObserver,
         
         searchController.searchBar.resignFirstResponder()
     }
+    
+    @IBAction func returntAction(_ sender: UIBarButtonItem) {
+        productsResource = uFermeraAPI.firstResource
+    }
+    
 }
